@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="col-xs-12">
+        <p>Add a new Employee</p>
+        <label>First Name</label>
+        <!-- Local Ref '#' gives you access to the HTML element -->
+        <input 
+        type="text"
+        class="form-control"
+        #fname>
+        <label>Last Name</label>
+        <!-- Two way binding -->
+        <input 
+        type="text"
+        class="form-control"
+        [(ngModel)]="lName">
+        <label>View Child Input</label>
+        <!-- View Child local ref -->
+        <input 
+        type="text"
+        class="form-control"
+        #viewChildInput>
+        <button 
+        class="btn btn-primary"
+        (click)="addEmployee(fname)">
+        <!-- included the Local Ref inside the click listener -->
+            Add Employee
+        </button>
+        <button 
+            class="btn btn-success"
+            (click)="testViewChild()">Testing View Child
+        </button>
+    </div>
+</div>

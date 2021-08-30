@@ -1,0 +1,12 @@
+table {
+    width: 250px;
+    border: 2px solid aqua;
+    background-color: black;
+    color: white;
+}
+
+th {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: cursive;
+}

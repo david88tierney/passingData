@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <app-output-event-practice (employeeCreated)="onAddEmployee($event)"></app-output-event-practice>
+        <div class="center">
+            <app-child-one 
+                class="one"
+                *ngFor="let e of elem"
+                [elem]="e">
+            </app-child-one>
+        </div>
+    </div>
+    <div class="row">
+        <app-child-two 
+            *ngFor="let e of elem"
+            [alias]="e">
+        </app-child-two>
+    </div>
+</div>
